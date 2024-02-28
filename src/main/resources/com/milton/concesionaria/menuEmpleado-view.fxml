@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="497.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.milton.concesionaria.controllers.MenuEmpleadoController">
+   <children>
+      <Pane prefHeight="497.0" prefWidth="217.0" style="-fx-background-color: orange;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@concesionario/Logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="31.0" layoutY="160.0" text="Menu">
+               <font>
+                  <Font size="61.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="261.0" text="Empleado">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane layoutX="289.0" layoutY="129.0" prefHeight="303.0" prefWidth="461.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="133.0" layoutX="10.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@concesionario/download%20(3).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="134.0" layoutX="10.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@concesionario/icons8-planificador-64.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bttonAddCita" mnemonicParsing="false" onMouseClicked="#bttonAddCita" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: black;" text="Agendar Citas" textFill="WHITE" GridPane.columnIndex="1" />
+            <Button fx:id="bttonVerCita" layoutX="241.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#bttonVerCita" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: black;" text="Ver Citas" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

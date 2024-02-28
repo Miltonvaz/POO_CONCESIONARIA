@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="741.0" prefWidth="570.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.milton.concesionaria.controllers.CamionetasController">
+    <children>
+        <HBox layoutX="112.0" layoutY="48.0" prefHeight="57.0" prefWidth="412.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="57.0" prefWidth="418.0" text="Ingrese lo datos del automovil:">
+                    <font>
+                        <Font name="System Bold" size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <VBox layoutX="142.0" layoutY="123.0" prefHeight="465.0" prefWidth="286.0" spacing="5.0">
+            <children>
+                <Label text="Modelo:" />
+                <TextField fx:id="text1" />
+                <Label text="Color" />
+                <TextField fx:id="text2" />
+                <Label text="Cilindros:" />
+                <TextField fx:id="text3" />
+                <Label text="Precio:" />
+                <TextField fx:id="text4" />
+                <Label text="Año" />
+                <TextField fx:id="text5" />
+                <Label text="No.Motor:" />
+                <TextField fx:id="text6" />
+                <Label text="Es todo terreno:" />
+                <RadioButton fx:id="bttonsi" mnemonicParsing="false" onAction="#bttonsi" onMouseClicked="#Onbttonsi" text="Si" />
+                <RadioButton mnemonicParsing="false" text="No" />
+                <Label text="Capacidad de Carga:" />
+                <TextField fx:id="text7" />
+            </children>
+        </VBox>
+        <HBox layoutX="134.0" layoutY="659.0" prefHeight="47.0" prefWidth="303.0" spacing="50.0">
+            <children>
+                <Button fx:id="bttonAdd" mnemonicParsing="false" onMouseClicked="#bttonAdd" prefHeight="61.0" prefWidth="125.0" style="-fx-background-color: #1BFF00;" text="Agregar" />
+                <Button fx:id="Bttoncancelar" mnemonicParsing="false" onAction="#Bttoncancelar" onMouseClicked="#onBttoncancelar" prefHeight="80.0" prefWidth="126.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

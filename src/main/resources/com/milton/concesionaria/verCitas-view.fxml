@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.milton.concesionaria.controllers.VerCitasController">
+   <children>
+      <Pane prefHeight="512.0" prefWidth="200.0" style="-fx-background-color: purple;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@concesionario/icons8-planificador-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="18.0" layoutY="225.0" text="Ver Citas" textFill="WHITE">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ListView fx:id="listCitas" layoutX="250.0" layoutY="32.0" prefHeight="270.0" prefWidth="608.0" />
+      <Button fx:id="bttonVer" layoutX="347.0" layoutY="362.0" mnemonicParsing="false" onAction="#bttonVer" onMouseClicked="#bttonVer" prefHeight="49.0" prefWidth="164.0" style="-fx-background-color: purple; -fx-background-radius: 15;" text="Ver" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button fx:id="bttonSalir" layoutX="599.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#bttonSalir" prefHeight="49.0" prefWidth="164.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="Salir" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
